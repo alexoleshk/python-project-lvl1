@@ -5,3 +5,6 @@
 
 ### my flake8 check
 ![42](https://github.com/alexoleshk/python-project-lvl1/actions/workflows/linter.yml/badge.svg)
+
+### Example game
+[![asciicast](https://asciinema.org/a/2bJQFuUBVuFNqkhQ2uhKIWPw9.svg)](https://asciinema.org/a/2bJQFuUBVuFNqkhQ2uhKIWPw9)
