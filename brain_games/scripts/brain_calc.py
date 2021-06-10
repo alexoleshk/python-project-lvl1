@@ -5,7 +5,8 @@ from brain_games.games.calc import calc_game
 
 def main():
     name = greeting()
-    calc_game(name)
+    if calc_game(name):
+        print('Congratulations, {}!'.format(name))
 
 
 if __name__ == '__main__':

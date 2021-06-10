@@ -1,24 +1,21 @@
-import prompt
 import random
 import operator
+import prompt
+from brain_games.common_funcs import check_answer
 
 
 def calc_game(name):
     print('What is the result of the expression?')
+    ops = {'+': operator.add, '-': operator.sub, '*': operator.mul}
+    max_num = 99
     attempts = 3
     for i in range(attempts):
-        max_num = 99
         a = random.randint(1, max_num)
         b = random.randint(1, max_num)
-        ops = {'+': operator.add, '-': operator.sub, '*': operator.mul}
         op = random.choice(list(ops.keys()))
         print('Question: {} {} {}'.format(a, op, b))
         answer = prompt.integer('Your answer: ')
         right_answer = ops[op](a, b)
-        if answer != right_answer:
-            print("'{}' is wrong answer ;(."
-                  " Correct answer was '{}'.".format(answer, right_answer))
-            print("Let's try again, {}!".format(name))
-            return
-        print('Correct!')
-    print('Congratulations, {}!'.format(name))
+        if not check_answer(name, answer, right_answer):
+            return False
+    return True
