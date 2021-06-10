@@ -3,11 +3,7 @@ import random
 import operator
 
 
-def calc_game():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}'.format(name))
-
+def calc_game(name):
     print('What is the result of the expression?')
     attempts = 3
     for i in range(attempts):
