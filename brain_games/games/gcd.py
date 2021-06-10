@@ -1,9 +1,7 @@
 import random
 import prompt
+from math import gcd
 from brain_games.common_funcs import check_answer
-
-def find_gcd(a, b):
-
 
 
 def gcd_game(name):
@@ -15,7 +13,7 @@ def gcd_game(name):
         b = random.randint(1, max_num)
         print('Question: {} {}'.format(a, b))
         answer = prompt.integer('Your answer: ')
-        right_answer = find_gcd(a, b)
+        right_answer = gcd(a, b)
         if not check_answer(name, answer, right_answer):
             return False
     return True
