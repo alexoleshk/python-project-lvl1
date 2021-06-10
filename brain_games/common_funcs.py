@@ -16,4 +16,3 @@ def check_answer(name, answer, right_answer):
         return False
     print('Correct!')
     return True
-
