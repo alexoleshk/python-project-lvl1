@@ -6,5 +6,8 @@
 ### my flake8 check
 ![42](https://github.com/alexoleshk/python-project-lvl1/actions/workflows/linter.yml/badge.svg)
 
-### Example game
+### Example brain-even game
 [![asciicast](https://asciinema.org/a/2bJQFuUBVuFNqkhQ2uhKIWPw9.svg)](https://asciinema.org/a/2bJQFuUBVuFNqkhQ2uhKIWPw9)
+
+### Example brain-calc game
+[![asciicast](https://asciinema.org/a/ROyJHcpwhEBWpqIeGro0BFC0R.svg)](https://asciinema.org/a/ROyJHcpwhEBWpqIeGro0BFC0R)
