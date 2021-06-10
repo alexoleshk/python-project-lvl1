@@ -11,3 +11,6 @@
 
 ### Example brain-calc game
 [![asciicast](https://asciinema.org/a/ROyJHcpwhEBWpqIeGro0BFC0R.svg)](https://asciinema.org/a/ROyJHcpwhEBWpqIeGro0BFC0R)
+
+### Example brain-gcd game
+[![asciicast](https://asciinema.org/a/8c2eKJRGRkBVOs0IUuQ6Sv48j.svg)](https://asciinema.org/a/8c2eKJRGRkBVOs0IUuQ6Sv48j)
