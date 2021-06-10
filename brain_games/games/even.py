@@ -10,7 +10,7 @@ def even_game():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     attempts = 3
     for i in range(attempts):
-        max_num = 100
+        max_num = 99
         n = random.randint(1, max_num)
         print('Question: {}'.format(n))
         answer = prompt.string('Your answer: ')
