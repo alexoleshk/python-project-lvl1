@@ -13,4 +13,5 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
-.PHONY: install brain-games
+lint:
+	poetry run flake8 brain_games
