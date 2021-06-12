@@ -17,8 +17,8 @@ def is_prime(n):
 
 def prime_game(name):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    attempts = 3
     max_num = 20
+    attempts = 3
     for i in range(attempts):
         n = random.randint(1, max_num)
         right_answer = 'yes' if is_prime(n) else 'no'
