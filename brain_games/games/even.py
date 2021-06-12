@@ -1,24 +1,17 @@
 import prompt
 import random
+from brain_games.common_funcs import check_answer
 
 
-def even_game():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}'.format(name))
-
+def even_game(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
+    max_num = 99
     attempts = 3
     for i in range(attempts):
-        max_num = 99
         n = random.randint(1, max_num)
         print('Question: {}'.format(n))
         answer = prompt.string('Your answer: ')
         right_answer = 'no' if n % 2 else 'yes'
-        if answer != right_answer:
-            print("'{}' is wrong answer ;(."
-                  " Correct answer was '{}'.".format(answer, right_answer))
-            print("Let's try again, {}!".format(name))
-            return
-        print('Correct!')
-    print('Congratulations, {}!'.format(name))
+        if not check_answer(name, answer, right_answer):
+            return False
+    return True
