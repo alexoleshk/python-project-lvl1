@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 
-from brain_games.games.even import even_game
-from brain_games.common_funcs import greeting
+from brain_games.engine import engine
 
 
 def main():
-    name = greeting()
-    if even_game(name):
-        print('Congratulations, {}!'.format(name))
+    engine('even')
 
 
 if __name__ == '__main__':
