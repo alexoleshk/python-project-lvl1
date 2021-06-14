@@ -15,3 +15,12 @@ def even_game(name):
         if not check_answer(name, answer, right_answer):
             return False
     return True
+
+
+def get_answers_even():
+    max_num = 100
+    n = random.randint(1, max_num)
+    print('Question: {}'.format(n))
+    answer = prompt.string('Your answer: ')
+    correct_answer = 'no' if n % 2 else 'yes'
+    return answer, correct_answer
