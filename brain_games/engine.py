@@ -21,8 +21,8 @@ def engine(game):
     name = prompt.string('May I have your name? ')
     print('Hello, {}'.format(name))
     print(get_task(game))
-    attempts = 3
-    for i in range(attempts):
+    rounds = 3
+    for i in range(rounds):
         answer, correct_answer = get_answers(game)
         if answer != correct_answer:
             print("'{}' is wrong answer ;(."
