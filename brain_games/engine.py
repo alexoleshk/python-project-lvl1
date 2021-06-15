@@ -27,8 +27,8 @@ def engine(game):
         print(question)
         user_answer = prompt.string('Your answer: ')
         if user_answer != str(correct_answer):
-            print("'{}' is wrong answer ;(."
-                  " Correct answer was '{}'.".format(user_answer, correct_answer))
+            print("'{}' is wrong answer ;(. Correct answer "
+                  "was '{}'.".format(user_answer, correct_answer))
             print("Let's try again, {}!".format(name))
             return
         print('Correct!')
