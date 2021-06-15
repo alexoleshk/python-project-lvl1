@@ -19,6 +19,6 @@ def get_question_answer(game):
         'even': get_quest_ans_even,
         'progression': get_quest_ans_progr,
         'calc': get_quest_ans_calc,
-        'gcd': get_quest_ans_gcd
+        'gcd': get_quest_ans_gcd,
     }
     return funcs[game]()
