@@ -27,3 +27,11 @@ def prime_game(name):
         if not check_answer(name, answer, right_answer):
             return False
     return True
+
+
+def get_quest_ans_prime():
+    max_num = 20
+    n = random.randint(1, max_num)
+    question = 'Question: {}'.format(n)
+    correct_answer = 'yes' if is_prime(n) else 'no'
+    return question, correct_answer
