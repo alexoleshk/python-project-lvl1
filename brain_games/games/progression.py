@@ -24,15 +24,14 @@ def progression_game(name):
 
 
 def get_quest_ans_progr():
-    PROGR_LEN = 10
-    # правильно ли тут писать PROGR_LEN заглавными?
-    # может вообще вынести PROGR_LEN за пределы функции?
+    progr_len = 10
     step = random.randint(1, 9)
     first_elem = random.randint(1, 42)
     progression = list(range(first_elem,
-                             first_elem + step * (PROGR_LEN - 1) + 1, step))
-    index_to_hide = random.randint(0, PROGR_LEN - 1)
+                             first_elem + step * (progr_len - 1) + 1, step))
+    index_to_hide = random.randint(0, progr_len - 1)
     correct_answer = progression[index_to_hide]
     progression[index_to_hide] = '..'
-    question = ' '.join(map(str, progression))
+    progr_str_with_hidden = ' '.join(map(str, progression))
+    question = 'Question: {}'.format(progr_str_with_hidden)
     return question, correct_answer
