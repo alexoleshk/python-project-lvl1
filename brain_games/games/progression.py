@@ -21,3 +21,16 @@ def progression_game(name):
         if not check_answer(name, answer, right_answer):
             return False
     return True
+
+
+def get_quest_ans_progr():
+    PROGR_LEN = 10   # правильно ли тут писать заглавными? может вообще вынести за пределы функции?
+    step = random.randint(1, 9)
+    first_elem = random.randint(1, 42)
+    progression = list(range(first_elem,
+                             first_elem + step * (PROGR_LEN - 1) + 1, step))
+    index_to_hide = random.randint(0, PROGR_LEN - 1)
+    correct_answer = progression[index_to_hide]
+    progression[index_to_hide] = '..'
+    question = ' '.join(map(str, progression))
+    return question, correct_answer
