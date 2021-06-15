@@ -1,6 +1,7 @@
 from brain_games.games.calc import get_quest_ans_calc
 from brain_games.games.even import get_quest_ans_even
 from brain_games.games.gcd import get_quest_ans_gcd
+from brain_games.games.prime import get_quest_ans_prime
 from brain_games.games.progression import get_quest_ans_progr
 
 
@@ -10,6 +11,8 @@ def get_task(game):
         'progression': 'What number is missing in the progression?',
         'calc': 'What is the result of the expression?',
         'gcd': 'Find the greatest common divisor of given numbers.',
+        'prime': 'Answer "yes" if given number is prime. '
+                 'Otherwise answer "no".',
     }
     return tasks[game]
 
@@ -20,5 +23,6 @@ def get_question_answer(game):
         'progression': get_quest_ans_progr,
         'calc': get_quest_ans_calc,
         'gcd': get_quest_ans_gcd,
+        'prime': get_quest_ans_prime,
     }
     return funcs[game]()
