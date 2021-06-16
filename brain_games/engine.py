@@ -1,15 +1,14 @@
 import prompt
-from brain_games.helpers import get_task, get_question_answer
 
 
-def engine(game):
+def engine(task, get_question_answer):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {}'.format(name))
-    print(get_task(game))
+    print(task)
     rounds = 3
     for i in range(rounds):
-        question, correct_answer = get_question_answer(game)
+        question, correct_answer = get_question_answer()
         print(question)
         user_answer = prompt.string('Your answer: ')
         if user_answer != str(correct_answer):
