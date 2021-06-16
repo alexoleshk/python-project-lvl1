@@ -1,7 +1,7 @@
 import random
 
 
-def get_quest_ans_progr():
+def get_quest_ans_progression():
     progr_len = 10
     step = random.randint(1, 9)
     first_elem = random.randint(1, 42)
