@@ -1,5 +1,6 @@
 import random
 from math import sqrt
+
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MAX_NUM = 20
 

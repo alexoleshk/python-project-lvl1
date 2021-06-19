@@ -1,5 +1,6 @@
 import random
 from math import gcd
+
 TASK = 'Find the greatest common divisor of given numbers.'
 MAX_NUM = 99
 
