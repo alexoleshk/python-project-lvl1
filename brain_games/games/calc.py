@@ -5,16 +5,16 @@ TASK = 'What is the result of the expression?'
 MAX_NUM = 25
 
 
-def calculate_result(a, b, op):
+def calculate(operand_one, operand_two, operation):
     ops = {'+': operator.add, '-': operator.sub, '*': operator.mul}
-    return ops[op](a, b)
+    return ops[operation](operand_one, operand_two)
 
 
 def get_question_answer():
-    a = random.randint(1, MAX_NUM)
-    b = random.randint(1, MAX_NUM)
-    op = random.choice(['+', '-', '*'])
-    question = 'Question: {} {} {}'.format(a, op, b)
-    result = calculate_result(a, b, op)
+    operand_two = random.randint(1, MAX_NUM)
+    operand_one = random.randint(1, MAX_NUM)
+    operation = random.choice(['+', '-', '*'])
+    question = 'Question: {} {} {}'.format(operand_one, operation, operand_two)
+    result = calculate(operand_one, operand_two, operation)
     correct_answer = str(result)
     return question, correct_answer
