@@ -17,5 +17,5 @@ def get_question_answer():
     index_to_hide = random.randint(0, PROGR_LEN - 1)
     correct_answer = str(progression[index_to_hide])
     progression[index_to_hide] = '..'
-    question = 'Question: {}'.format(' '.join(map(str, progression)))
+    question = ' '.join(map(str, progression))
     return question, correct_answer

@@ -10,7 +10,7 @@ def run(game):
     print(game.TASK)
     for _ in range(ROUNDS_COUNT):
         question, correct_answer = game.get_question_answer()
-        print(question)
+        print('Question: {}'.format(question))
         user_answer = prompt.string('Your answer: ')
         if user_answer != correct_answer:
             print("'{}' is wrong answer ;(. Correct answer "

@@ -18,6 +18,5 @@ def is_prime(n):
 
 def get_question_answer():
     n = random.randint(1, MAX_NUM)
-    question = 'Question: {}'.format(n)
     correct_answer = 'yes' if is_prime(n) else 'no'
-    return question, correct_answer
+    return n, correct_answer

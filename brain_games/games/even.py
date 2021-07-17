@@ -10,6 +10,5 @@ def is_even(n):
 
 def get_question_answer():
     n = random.randint(1, MAX_NUM)
-    question = 'Question: {}'.format(n)
     correct_answer = 'yes' if is_even(n) else 'no'
-    return question, correct_answer
+    return n, correct_answer
