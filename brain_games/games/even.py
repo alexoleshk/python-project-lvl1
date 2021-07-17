@@ -5,7 +5,7 @@ MAX_NUM = 100
 
 
 def is_even(n):
-    return False if n % 2 else True
+    return n % 2 == 0
 
 
 def get_question_answer():
